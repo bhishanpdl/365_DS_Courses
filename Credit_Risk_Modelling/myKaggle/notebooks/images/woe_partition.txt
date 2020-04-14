@@ -1,0 +1,27 @@
+1. Discrete variables
+- Get woe data frame
+- sort values by WOE
+- Check number count and woe and group them.
+- Make separate category for large number column
+
+2. Continuous unique < 200
+- If we have about 100 categories, we can see them without binning.
+- If more than 100, first categorize the data, eg into 50 bins
+- Sort them by value, not by WOE
+- Again look at number count and woe to make categories.
+
+3. Continuous 
+- example is annual income
+- first try 50 bins, we may see low income bins number very high, eg 90%
+- then try 100 bins, we may see few bins having large counts
+- then break the data into two parts
+- create new temp data frame with income below < some_number
+- then repeat the usual process of binning
+- for annual income, we may create two bins for two edges, then equally split the
+  Middle bins.
+
+Notes:
+- If we see zigzag woe chart, we should suspect low number of counts
+- We can group all low number counts into one single category, or make
+  two or three depending how the curve looks.
+- If WOE curve is flat, drop the variable from analysis.

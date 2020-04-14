@@ -1,0 +1,3 @@
+Exercise:
+
+Create a trigger that checks if the hire date of an employee is higher than the current date. If true, set this date to be the current date. Format the output appropriately (YY-MM-DD).

@@ -1,0 +1,37 @@
+1. Load two datafilee sales first, then Add reviews data
+2. Left join (sales is left)
+3. Look at number of records, just by dragging them to workspace
+   And undo it.
+4. Change data type of date of purchase.
+5. Check count of ratings (check in excel of reviews file)
+
+---------------------
+- https://public.tableau.com/profile/nedko#!/vizhome/Lessons1819-Checkthedata/Sheet1
+
+
+** Data Blending
+- take two data sources and blend them which is different of joining two tables
+  In same data source.
+
+- load sales data
+- click on sheet
+- Data > new data source > review data
+- go to sheet1 you see two data
+- Data > edit relation > 
+  Make sure primary data source is Sales
+  And connections are Audiobook name and transaction id
+- Change data type of Date of purchase in sales data
+- Again go to connection you will see date of purchase there.
+
+----------------------------------------------
+** After blending
+- check number of rows in sales data: drag number of records to workspace, agg is sum.
+- check number of ratings in review data: drag ratings, change aggregation to count
+- When I am in reviews table, draggin rating fails, we need to add the connection.
+- Data > edit blend relation > sales purchase year == review review date year
+  And also months.
+
+
+Notes:
+In data sales make sure we see red links in Audio name, date of purchase, transaction id
+
